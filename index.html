@@ -1,29 +1,138 @@
 <!DOCTYPE html>
+
 <html lang="en-ca">
-  <head>
-    <!-- Set the page title -->
-    <title>Assignment 02</title>
+    <head>
+        <meta charset="utf-8">
+        <title>Harold Halloway</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-    <!-- Set the charset we're using to UTF-8 -->
-    <meta charset="UTF-8" />
+    <body>
+        <div class="page">
+        <header class="header">
+            <img id="hh-logo" src="img/logo_harold_halloway.png" alt="Harold Halloway Logo"/>
 
-    <!-- Set the screens default zoom / scale to 1 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <nav>
+                <ul id="navbar">
+                    <li id="nav-a">Home</li>
+                    <li id="nav-b"><a href="about.html">About</a></li>
+                    <li id="nav-c"><a href="blog.html">Blog</a></li>
+                    <li id="nav-d"><a href="news.html">News</a></li>
+                    <li id="nav-e"><a href="events.html">Events</a></li>
+                    <li id="nav-g"><a href="purchase.html">Purchase</a></li>
+                </ul>
+
+            </nav>     
+        </header>
+
+        <main>
+            
+            <section id="landing">
+                <div id="bb-show-ad">
+                    <h1>BARRY BUCKWELL</h1>
+                    <h3>Now a critically acclaimed BBC series</h3>
+                    <form action="purchase.html">
+                        <button class="merch-button" type="submit">SHOP COLLECTIBLES</button>
+                        <button class="merch-button" type="submit">SHOP APPAREL</button>
+                    </form>
+                </div>
+
+                <div id="hh-info">
+                    <img id="hh-headshot" src="img/headshot_harold_halloway.jpg" alt="Harold Halloway Headshot"/>
+                    <h5 id="photographer">Harold Halloway Portrait Sitting Rory Lewis Photographer 2015</h5>
+                </div>
     
-    <!-- Specifies the document mode for Internet Explorer -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            </section>
+            <section id="bb-shop">
+                <div id="shop-book">
+                    <img id="bb-book" src="img/book_barry_buckwell.png" alt="Barry Buckwell Book"/>
+                    <div id="book-info">
+                    <h5>Barry Buckwell: The Knight's Betrayal</h5>
+                    <h6>by Harold Halloway</h6>
+                    <h6>Paperback</h6>
+                    <p>Synopsis: Consequat pariatur qui ad eu. Culpa culpa incididunt qui adipisicing ipsum magna do ea pariatur. Incididunt incididunt officia eiusmod consequat do Lorem labore ex officia. Et nostrud non culpa ex do mollit deserunt irure exercitation irure proident. Nostrud nulla nostrud est nulla labore proident do ut magna aliquip non sint sit velit. Eu deserunt excepteur esse sit irure consectetur anim aliquip cupidatat nulla cupidatat sint consectetur consectetur. Dolor qui anim id est ut Lorem sit exercitation officia in proident.</p>
+                    <h3>$31.99 USD</h3>
+                    <form action="purchase.html">
+                        <button class="books-button" type="submit">BUY NOW</button>
+                    </form>
+                    </div>
+                </div>
 
-    <!-- We are using a CSS Reset file to standardize browser default css -->
-    <link rel="stylesheet" href="reset.css" />
+                <div id="shop-boxset">
+                    <img id="bb-boxset" src="img/boxset_barry_buckwell.png" alt="Barry Buckwell Boxset"/>
+                    <div id="boxset-info">
+                    <h5>Barry Buckwell: Box Set</h5>
+                    <h6>by Harold Halloway</h6>
+                    <h6>Paperback</h6>
+                    <p>Trilogy: Consequat pariatur qui ad eu. Culpa culpa incididunt qui adipisicing ipsum magna do ea pariatur. Incididunt incididunt officia eiusmod consequat do Lorem labore ex officia. Et nostrud non culpa ex do mollit deserunt irure exercitation irure proident. Nostrud nulla nostrud est nulla labore proident do ut magna aliquip non sint sit velit. Eu deserunt excepteur esse sit irure consectetur anim aliquip cupidatat nulla cupidatat sint consectetur consectetur. Dolor qui anim id est ut Lorem sit exercitation officia in proident.</p>
+                    <h3>$55.99 USD</h3>
+                    <form action="purchase.html">
+                        <button class="books-button" type="submit">BUY NOW</button>
+                    </form>
+                    </div>
+                </div>
+            </section>
 
-    <!-- This is where all of our awesome CSS code goes -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!--
+            <section id="whats-new">
+                <div id="news">
+                    <h2>News</h2>
+                    <h5>2023/01/10</h5>
+                    <h3>Huge crowds at Buckwell convention</h3>
+                    <h4>by Anderson Cooper</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adiiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                    <a class="read-more" href="news.html">Read more</a>
+                </div>
 
-      YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
+                <div id="blog">
+                    <h2>Blog</h2>
+                    <h5>2023/02/14</h5>
+                    <h3>Fantasy Dinner at the Ritz</h3>
+                    <h4>by Harold Halloway</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adiiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                    <a class="read-more" href="blog.html">Read more</a>
+                </div>
+            </section>
 
-    -->
-  </body>
+            <section id="contact-us">
+                <h2 id="contact-header">Contact Us</h2>
+                <form action="" method="post">
+                    <ul>
+                        <li>
+                            <label for="fullname">Full Name *</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="eg. Barry Buckwell" required="required"/>
+                        </li>
+                        <li>
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" placeholder="eg. barrybuckwell@halloway.com" required="required"/>
+                        </li>
+                        <li>
+                            <label for="message">Message *</label>
+                            <textarea id="message" rows="5" placeholder="What can we help you with?" required="required"></textarea>
+                        </li>
+                        <li>
+                            <button id="submit-message" type="submit">Submit</button>
+                        </li>
+                    </ul>
+                </form>
+            </section>
+
+
+        
+        </main>
+
+        <footer class="footer">
+
+            <div id="socials">
+                <h4>Follow Us</h4>
+                <img src="img/logos_social_media.png" alt="Social Media Logos"/>
+            </div>
+
+            <div id="copyright">
+                <h5>Copyright © 2023 Harold Halloway</h5>
+                <h5>Terms of Use | Privacy Policy</h5>
+            </div>
+
+        </footer>
+        </div>
+    </body>
 </html>

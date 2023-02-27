@@ -1,14 +1,12 @@
 body{
     background-color: #311D1D;
+    background-attachment: fixed;
+    background-size: cover;
     max-width: 100%;
     max-height: 3480px;
     margin: none;
     float: none;
-    overflow-x:hidden;
-    /*display: grid;
-    grid-column-gap: 40px;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(20, 1fr);*/
+    overflow-x:visible;
 }
 .other-pages{
     font-size: 43px;
@@ -31,14 +29,13 @@ body{
 #navbar{
     grid-column: 2 / 3;
     grid-row: 1;
-    width: 1700px;
     margin: 40px 200px;
     display:grid;
     grid-gap:40px;
     grid-template-columns: repeat(6, 1fr);
-    list-style-type: none;
 }
 li, a{
+    list-style-type: none;
     font-size: 43px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:#FFFFFF;
@@ -99,8 +96,6 @@ h3{
     z-index: 1;
     align-self: center;
     width: 430px;
-    /*margin-left: 200.3px;
-    margin-top: -100px;*/
     padding: 15px;
     background-color: #311D1D;
     font-size: 21px;
@@ -163,6 +158,8 @@ h3{
 }
 #whats-new{
     padding: 100px 200px;
+    border-bottom: solid;
+    border-color: #989F98;
     display: grid;
     grid-column-gap: 100px;
     grid-template-columns: 1fr 1fr;
@@ -173,9 +170,8 @@ h3{
     margin: 30px;
     background-color: rgba(355,355,355,.6);
     border-radius: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 450px;
+    font-size: 35px;
+    text-align: center;
 }
 #blog{
     grid-column: 2 / 3;
@@ -183,86 +179,38 @@ h3{
     margin: 30px;
     background-color: rgba(355,355,355,.6);
     border-radius: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 450px;
+    font-size: 35px;
+    text-align: center;
 }
-
-
-
-
-
-
-/*body{
-    background-color:#311D1D;
+.read-more{
+    font-size: 43px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#515151;
 }
-.page{
-    display: grid;
-    gap: 30px;
-    width: 100%;
-    height: 2700px;
-    grid-template-columns: 1.5em 1fr 1fr 1fr 1fr 1.5em;
-    grid-template-rows: repeat(20, 1fr);
-}
-
-.header {
-    background-color:#311D1D;
-    max-width: auto;
-    height: 150px; 
-    display:grid;
-    grid-template-columns: repeat(8, 1fr);
-
-}
-.page > #landing{
-    grid-area: landing;
-    background-image:url("../img/knight_background.png");
-    background-repeat: no-repeat;
-}
-.header > #hh-logo{
-    grid-column-start: 1;
-    grid-column-end: 3;
-
-}
-.header > #nav1{
-    grid-column-start: 4;
-    grid-column-end: 5;
-}
-
-button{
-    background-color:#311D1D;
-    border-color: #FFFFFF;
-    border-width: 1px;
-    border-radius: 24px;
-    padding: 10px 30px;
+#contact-us{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 43px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:#FFFFFF;
 }
-
-.page > #bb-shop{
-    grid-area: shop;
-    background-color:#B5C1B5;
-}
-#shop-book{
-    background-color:#d1d6d0;
-}
-#shop-boxset{
-    background-color:#d1d6d0;
-}
-.page > #whats-new{
-    grid-area: new; 
-    border-bottom: solid;
-    border-color:#B5C1B5;
-    border-width:2px;
-}
-.page > #contact-us {
-    grid-area: contact;
+#submit-message{
+    margin: 10px 200px;
+    border-radius: 24px;
+    padding: 10px 30px;
     background-color:#311D1D;
-    font-size: 29px;
+    font-size: 35px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    border-color: #FFFFFF;
     color:#FFFFFF;
 }
-
-.footer {
-    background-color:#B5C1B5;
-}*/
+.footer{
+    padding: 10px;
+    background-color: #989F98;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
